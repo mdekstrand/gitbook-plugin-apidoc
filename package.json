@@ -1,0 +1,38 @@
+{
+  "name": "gitbook-plugin-apidoc",
+  "version": "0.0.1",
+  "description": "GitBook plugin for API doc URLs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdekstrand/gitbook-plugin-apidoc.git"
+  },
+  "author": "Michael Ekstrand <md@ekstrandom.net> (https://md.ekstrandom.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdekstrand/gitbook-plugin-apidoc/issues"
+  },
+  "homepage": "https://github.com/mdekstrand/gitbook-plugin-apidoc#readme",
+  "engines": {
+    "gitbook": ">3.0.0"
+  },
+  "gitbook": {
+    "properties": {
+      "javadocBase": {
+        "type": "string",
+        "default": "/apidocs/",
+        "description": "Base URL for JavaDoc base docs"
+      }
+    }
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
+}
